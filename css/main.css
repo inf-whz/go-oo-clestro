@@ -1,0 +1,86 @@
+*{margin: 0; float: none;}
+body{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+.wraper{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: #5c83b1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    position: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box ;
+    padding-top: 10px;
+    z-index: 10;
+}
+#logo{
+    height: 50px;
+    width: auto;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 34px;
+    color: white;
+}
+#send-post{
+    height: auto;
+    width: auto;
+    margin-right:20px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+    color: white;
+    float: right;
+    background-color: #7e9fc6;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.login{
+    height: auto;
+    width: auto;
+    position: static;
+    margin-right: 120px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+    color: white;
+    float: right;
+    background-color: #7e9fc6;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/*________________________________*/
+.content{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    top: 20px;
+    margin: 0 auto;
+    padding-top: 60px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box ;
+}
+fieldset {
+    border: 0;
+    font-family: sans-serif;
+}
+fieldset strong{
+    font-size: 14px;
+}

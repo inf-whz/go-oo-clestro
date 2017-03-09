@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - godb@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="godb">
+      <object-id>16570</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="postgres">
+      <object-id>12401</object-id>
+    </database>
+    <schema id="3" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>680</introspection-state-number>
+      <introspection-timestamp>2017-02-13.01:42:14.816</introspection-timestamp>
+    </schema>
+    <schema id="4" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="5" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="6" parent="1" name="pg_temp_1">
+      <object-id>11848</object-id>
+    </schema>
+    <schema id="7" parent="1" name="pg_toast_temp_1">
+      <object-id>11849</object-id>
+    </schema>
+    <schema id="8" parent="1" name="information_schema">
+      <object-id>12113</object-id>
+    </schema>
+    <sequence id="9" parent="3" name="data_id_seq">
+      <object-id>24784</object-id>
+      <state-number>578</state-number>
+    </sequence>
+    <sequence id="10" parent="3" name="users_id_seq">
+      <object-id>24990</object-id>
+      <state-number>677</state-number>
+    </sequence>
+    <table id="11" parent="3" name="data">
+      <object-id>24786</object-id>
+      <state-number>578</state-number>
+    </table>
+    <table id="12" parent="3" name="users">
+      <object-id>24992</object-id>
+      <state-number>677</state-number>
+    </table>
+    <column id="13" parent="11" name="id">
+      <state-number>578</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;data_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="14" parent="11" name="name">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="15" parent="11" name="surname">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="16" parent="11" name="phonenumber">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="17" parent="11" name="email">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="18" parent="11" name="domicile">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="19" parent="11" name="region">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="20" parent="11" name="school">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="21" parent="11" name="fullort">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="22" parent="11" name="mathort">
+      <state-number>578</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="23" parent="11" name="data_pkey">
+      <object-id>24793</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="24" parent="11" name="data_name_key">
+      <object-id>24795</object-id>
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="25" parent="11" name="data_surname_key">
+      <object-id>24797</object-id>
+      <columns>surname</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="26" parent="11" name="data_phonenumber_key">
+      <object-id>24799</object-id>
+      <columns>phonenumber</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="27" parent="11" name="data_email_key">
+      <object-id>24801</object-id>
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="28" parent="11" name="data_domicile_key">
+      <object-id>24803</object-id>
+      <columns>domicile</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="29" parent="11" name="data_region_key">
+      <object-id>24805</object-id>
+      <columns>region</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="30" parent="11" name="data_school_key">
+      <object-id>24807</object-id>
+      <columns>school</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="31" parent="11" name="data_fullort_key">
+      <object-id>24809</object-id>
+      <columns>fullort</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="32" parent="11" name="data_mathort_key">
+      <object-id>24811</object-id>
+      <columns>mathort</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="33" parent="11" name="idx_data_name">
+      <object-id>24813</object-id>
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="34" parent="11" name="idx_data_surname">
+      <object-id>24814</object-id>
+      <columns>surname</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="35" parent="11" name="idx_data_phonenumber">
+      <object-id>24819</object-id>
+      <columns>phonenumber</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="36" parent="11" name="idx_data_email">
+      <object-id>24815</object-id>
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="37" parent="11" name="idx_data_domicile">
+      <object-id>24816</object-id>
+      <columns>domicile</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="38" parent="11" name="idx_data_region">
+      <object-id>24817</object-id>
+      <columns>region</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="39" parent="11" name="idx_data_school">
+      <object-id>24820</object-id>
+      <columns>school</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="40" parent="11" name="idx_data_fullort">
+      <object-id>24821</object-id>
+      <columns>fullort</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="41" parent="11" name="idx_data_mathort">
+      <object-id>24818</object-id>
+      <columns>mathort</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="42" parent="11" name="data_pkey">
+      <object-id>24794</object-id>
+      <columns>id</columns>
+      <underlying-index>data_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="43" parent="11" name="data_name_key">
+      <object-id>24796</object-id>
+      <columns>name</columns>
+      <underlying-index>data_name_key</underlying-index>
+    </key>
+    <key id="44" parent="11" name="data_surname_key">
+      <object-id>24798</object-id>
+      <columns>surname</columns>
+      <underlying-index>data_surname_key</underlying-index>
+    </key>
+    <key id="45" parent="11" name="data_phonenumber_key">
+      <object-id>24800</object-id>
+      <columns>phonenumber</columns>
+      <underlying-index>data_phonenumber_key</underlying-index>
+    </key>
+    <key id="46" parent="11" name="data_email_key">
+      <object-id>24802</object-id>
+      <columns>email</columns>
+      <underlying-index>data_email_key</underlying-index>
+    </key>
+    <key id="47" parent="11" name="data_domicile_key">
+      <object-id>24804</object-id>
+      <columns>domicile</columns>
+      <underlying-index>data_domicile_key</underlying-index>
+    </key>
+    <key id="48" parent="11" name="data_region_key">
+      <object-id>24806</object-id>
+      <columns>region</columns>
+      <underlying-index>data_region_key</underlying-index>
+    </key>
+    <key id="49" parent="11" name="data_school_key">
+      <object-id>24808</object-id>
+      <columns>school</columns>
+      <underlying-index>data_school_key</underlying-index>
+    </key>
+    <key id="50" parent="11" name="data_fullort_key">
+      <object-id>24810</object-id>
+      <columns>fullort</columns>
+      <underlying-index>data_fullort_key</underlying-index>
+    </key>
+    <key id="51" parent="11" name="data_mathort_key">
+      <object-id>24812</object-id>
+      <columns>mathort</columns>
+      <underlying-index>data_mathort_key</underlying-index>
+    </key>
+    <column id="52" parent="12" name="id">
+      <state-number>677</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="53" parent="12" name="user">
+      <state-number>677</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="54" parent="12" name="password">
+      <state-number>677</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="55" parent="12" name="type">
+      <state-number>677</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="56" parent="12" name="users_pkey">
+      <object-id>24999</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="57" parent="12" name="users_user_key">
+      <object-id>25001</object-id>
+      <columns>user</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="58" parent="12" name="users_password_key">
+      <object-id>25003</object-id>
+      <columns>password</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="59" parent="12" name="users_type_key">
+      <object-id>25005</object-id>
+      <columns>type</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="60" parent="12" name="idx_users_user">
+      <object-id>25007</object-id>
+      <columns>user</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="61" parent="12" name="idx_users_password">
+      <object-id>25008</object-id>
+      <columns>password</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="62" parent="12" name="idx_users_type">
+      <object-id>25009</object-id>
+      <columns>type</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="63" parent="12" name="users_pkey">
+      <object-id>25000</object-id>
+      <columns>id</columns>
+      <underlying-index>users_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="64" parent="12" name="users_user_key">
+      <object-id>25002</object-id>
+      <columns>user</columns>
+      <underlying-index>users_user_key</underlying-index>
+    </key>
+    <key id="65" parent="12" name="users_password_key">
+      <object-id>25004</object-id>
+      <columns>password</columns>
+      <underlying-index>users_password_key</underlying-index>
+    </key>
+    <key id="66" parent="12" name="users_type_key">
+      <object-id>25006</object-id>
+      <columns>type</columns>
+      <underlying-index>users_type_key</underlying-index>
+    </key>
+  </database-model>
+</dataSource>

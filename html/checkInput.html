@@ -1,0 +1,27 @@
+{{ define "checkInput"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>{{ .Name }}</p>
+<p>{{ .Surname }}</p>
+<p>{{ .Phonenumber }}</p>
+<p>{{ .Email }}</p>
+<p>{{ .Domicile }}</p>
+<p>{{ .Region }}</p>
+<p>{{ .School }}</p>
+<p>{{ .Fullort }}</p>
+<p>{{ .Mathort }}</p>
+
+<a href="/input">Back</a><br>
+<a href="/enterData">Enter</a><br>
+<a href="/destroy">Destroy</a>
+
+</body>
+</html>
+
+{{ end }}

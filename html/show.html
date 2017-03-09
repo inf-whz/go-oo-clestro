@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+</head>
+<body>
+<table border="1">
+{{ range $key,$value := .}}
+
+<tr>
+    <td>{{ $value.Name }}</td><td>{{ $value.Surname }}</td>
+    <td>{{ $value.Phonenumber }}</td><td>{{ $value.Email }}</td>
+    <td>{{ $value.Domicile }}</td><td>{{ $value.Region }}</td>
+    <td>{{ $value.School }}</td><td>{{ $value.Fullort }}</td>
+    <td>{{ $value.Mathort }}</td>
+</tr>
+
+{{ end }}
+</table>
+
+<a href="/">Main</a>
+</body>
+</html>

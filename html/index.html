@@ -1,0 +1,47 @@
+{{ define "index"}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
+    <script type="text/javascript" src="js/Myscript.js" ></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/login-card.css" type="text/css">
+</head>
+<body>
+
+        <div class="pre_header">
+            <div class="header">
+                <a href="/"><div class="top_bar"><p id="logon">Hello world!</p></div></a>
+                {{if .In  }}
+                <a href="/login"><div class="log_in">Войти</div></a>
+                <a href="/input"><div class="log_in">Подать заявку</div></a>
+                {{ else }}
+                <a href="/logout"><div class="log_in">Выйти</div></a>
+                {{ end }}
+            </div>
+        </div>
+
+<div class="wraper">
+    <div class="header">
+        <a href="index.html"><span id="logo">КГУСТА</span></a>
+        {{if .In  }}
+        <a href="/login"><div class="login">Войти</div></a>
+        <a href="/input"><div id="send-post">Подать заявку</div></a>
+        {{ else }}
+        <a href="/logout"><div class="login">Выйти</div></a>
+        {{ end }}
+    </div><!--header-->
+    <!------------------------------------------->
+    <div class="content">
+
+
+
+    </div><!--content-->
+</div><!--wraper-->
+</body>
+</html>
+{{ end }}

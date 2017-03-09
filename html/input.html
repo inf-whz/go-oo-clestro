@@ -1,0 +1,94 @@
+{{ define "input" }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
+    <script type="text/javascript" src="js/Myscript.js" ></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/login-card.css" type="text/css">
+</head>
+<body    background="img/backfont21.img">
+<div class="wraper">
+    <div class="header">
+        <a href="index.html"><span id="logo">КГУСТА</span></a>
+        <a href="#"><span id="send-post">Подать заявку</span></a>
+    </div><!--header-->
+    <!------------------------------------------->
+    <div class="content">
+
+        <div class="login-card">
+            <h1>Заполните форму</h1><br>
+            <form action="/form-send-confirm" method="post">
+                <div class="form-send-name">
+                    <fieldset>
+                        <legend><strong>Как вас зовут</strong></legend>
+                        <input type="text" name="name"  placeholder="Имя" value={{ .Name }}>
+                        <input type="text" name="surname" placeholder="Фамилия" value={{ .Surname }}>
+                    </fieldset>
+                </div>
+                <div class="form-send-phone">
+                    <fieldset>
+                        <legend><strong>Мобильный телефон</strong></legend>
+                        <input type="text" name="phonenumber" placeholder="+996 --- -- -- --" style="width:370px;" value={{ .Phonenumber }}>
+                    </fieldset>
+                </div>
+                <div class="form-send-email">
+                    <fieldset>
+                        <legend><strong>Адрес эл. почты</strong></legend>
+                        <input type="text" name="email" placeholder="exemple@mail.com" style="width:370px;" value={{ .Email }}>
+                    </fieldset>
+                </div>
+                <div class="form-send-adres">
+                    <fieldset>
+                        <legend><strong>Адрес проживания</strong></legend>
+                        <input type="text" name="domicile" placeholder="Адрес" style="width:370px;" value={{ .Domicile }}>
+                    </fieldset>
+                </div>
+                <div class="form-send-region">
+                    <fieldset>
+                        <legend><strong>Регион</strong></legend>
+                        <input type="text" name="region" placeholder="Регион" style="width:370px;" value={{ .Region }}>
+                    </fieldset>
+                </div>
+                <div class="form-send-school">
+                    <fieldset>
+                        <legend><strong>Школа</strong></legend>
+                        <input type="text" name="school" placeholder="Номер школы" style="width:370px;" value={{ .School }}>
+                    </fieldset>
+                </div>
+                <div class="form-send-ORT">
+                    <fieldset>
+                        <legend><strong>ОРТ</strong></legend>
+                        <input type="number" min="0" max="400" name="fullort" placeholder="Количество баллов ОРТ" style="width:370px;" value={{ .Fullort }}>
+                    </fieldset>
+                </div>
+                <div class="form-send-ORT-math">
+                    <fieldset>
+                        <legend><strong>ОРТ предметы</strong></legend>
+                        <input type="number" min="0" max="400" name="mathort" placeholder="Математика" value={{ .Mathort }}>
+                    </fieldset>
+                </div>
+                <div class="form-send-ORT-math">
+                    <fieldset>
+                        <legend><strong>CAPTCHA</strong></legend>
+                    </fieldset>
+                </div>
+
+                <input type="submit" name="login" class="login login-submit" value="Продолжить">
+                </form><!--form-->
+
+            <div class="login-help">
+                <a href="#">Служба Атая</a> • <a href="#">Забыли пароль</a>
+            </div><!--login-help-->
+        </div><!--login-card-->
+
+    </div><!--content-->
+</div><!--wraper-->
+</body>
+</html>
+
+{{ end }}
